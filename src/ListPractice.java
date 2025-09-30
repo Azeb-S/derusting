@@ -23,7 +23,14 @@ public class ListPractice {
     // Insert a new element at index 0 (the length of the list will change)
     daysOfTheWeek.add(0, "Fryday");
     // Check whether the list contains a certain string
-
+      boolean found = false;
+     if daysOfTheWeek.contains("Monday"){
+      found = true;
+      
+     }else{
+      found = false
+     }
+     System.out.println(found);
     // Iterate over the list using a traditional for-loop.
     // Print each index and value on a separate line
 
