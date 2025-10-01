@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class ListPractice {
 
@@ -32,12 +34,21 @@ public class ListPractice {
      }
      System.out.println(found);
     // Iterate over the list using a traditional for-loop.
+    for(int i = 0; i < daysOfTheWeek.size(); i++){
+      
     // Print each index and value on a separate line
+    System.out.println(daysOfTheWeek.get(i));
+    }
 
     // Sort the list using the Collections library
+    Collections.sort(daysOfTheWeek);
 
     // Iterate over the list using a for-each loop
-    // Print each value on a second line
+    for(String i : daysOfTheWeek){
+          // Print each value on a second line
+      System.out.println(i);
+    }
+
 
     /*
      * Usage tip!
